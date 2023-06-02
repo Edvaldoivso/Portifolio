@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class BodyComponent {
 
+  skills = [
+    { img: 'img1', texto: '1' },
+    { img: 'img2', texto: '1' },
+    { img: 'img3', texto: '1' },
+    { img: 'img4', texto: '1' }]
+
+  constructor() { }
+  ngOnInit(): void {
+
+  }
 }

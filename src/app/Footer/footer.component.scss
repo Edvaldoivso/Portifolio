@@ -1,3 +1,13 @@
-*{
-    background-color: rgb(18, 140, 53);
+@import 'src/resources/variables/fonts.scss';
+@import 'src/resources/variables/displayFlex.scss';
+
+.footer_texto {
+    @include fontSmall;
+    height: 10vh;
+    margin-top: 5%
+}
+
+
+.global_section , .formulario {
+    @include flexAbsolut(2px);
 }

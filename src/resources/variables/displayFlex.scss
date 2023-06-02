@@ -1,0 +1,7 @@
+@mixin flexAbsolut($border) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: $border white solid;
+    align-items: center;
+}
