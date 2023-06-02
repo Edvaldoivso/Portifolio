@@ -1,3 +1,6 @@
-*{
-    background-color: rgb(0, 89, 255);
+@import 'src/resources/variables/colors.scss';
+@import 'src/resources/variables/fonts.scss';
+
+* {
+    @include fontBig;
 }
