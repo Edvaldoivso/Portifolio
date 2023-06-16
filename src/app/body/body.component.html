@@ -1,25 +1,19 @@
 <section>
-
+    
     <div class="cheet_skills">
-
         <div *ngFor="let item of skills">
 
-            <figure>
-                <img src={{ item.img }}>
-                <figcaption>
+            <figure class="cheet_cardSkill">
+                <img class="cheet_cardImg" src="{{item.img}}">
+                <figcaption class="cheet_cardCaption">
                     {{item.texto}}
                 </figcaption>
             </figure>
-
-
         </div>
-
     </div>
 
-
-
-
 </section>
+
 <section>
 
     <div class="carroucel">

@@ -1,6 +1,33 @@
+.cheet_skills {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    width: 50vw;
+    margin-left: 25%;
+}
 
+.cheet_cardSkill {
+    background-color: rgba(154, 154, 200, 0.668);
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+}
 
-* {
-    background-color: red;
-    
+.cheet_cardImg {
+    height: 100px;
+    width: 100px;
+}
+
+.cheet_cardCaption {
+    height: 50px;
+    width: 100%;
+}
+
+figure , figcaption , img{
+    background-color: rgba(154, 154, 200, 0.668);
 }

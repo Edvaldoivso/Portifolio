@@ -8,10 +8,16 @@ import { Component } from '@angular/core';
 export class BodyComponent {
 
   skills = [
-    { img: 'img1', texto: '1' },
-    { img: 'img2', texto: '1' },
-    { img: 'img3', texto: '1' },
-    { img: 'img4', texto: '1' }]
+    { img: '#', texto: '1' },
+    { img: '#', texto: '2' },
+    { img: '#', texto: '3' },
+    { img: '#', texto: '4' },
+    { img: '#', texto: '5' },
+    { img: '#', texto: '6' },
+    { img: '#', texto: '7' },
+    { img: '#', texto: '8' },
+    { img: '#', texto: '9' }]
+
 
   constructor() { }
   ngOnInit(): void {
