@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  public textoHellow = 'Hello Im Edvaldo and I talk about Plants here.'
+  public textoHellow = 'Hello I talk about Plants here.'
   public botaoSortPlant = `Sort Month Specie`
   public subtexto = 'Currently located in Brasil...'
 

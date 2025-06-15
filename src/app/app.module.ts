@@ -9,6 +9,10 @@ import { MenuComponent } from './Menu/menu.component';
 import { SponsorshipComponent } from './Sponsorship/sponsorship.component';
 import { BodyComponent } from './body/body.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { PagesComponent } from './Pages/pages/pages.component';
+import { IdeasComponent } from './Pages/ideas/ideas.component';
+import { GaleryComponent } from './Pages/galery/galery.component';
+import { IndorComponent } from './Pages/indor/indor.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { ProjectsComponent } from './projects/projects.component';
     MenuComponent,
     SponsorshipComponent,
     BodyComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    PagesComponent,
+    IdeasComponent,
+    GaleryComponent,
+    IndorComponent
   ],
   imports: [
     BrowserModule,
