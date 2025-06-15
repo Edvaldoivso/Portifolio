@@ -1,13 +1,15 @@
-@import 'src/resources/variables/fonts.scss';
-@import 'src/resources/variables/displayFlex.scss';
+@use 'src/resources/variables/fonts' as *;
+@use 'src/resources/variables/displayFlex' as *;
 
 .footer_texto {
     @include fontSmall;
-    height: 10vh;
-    margin-top: 5%
+    height: 5vh;
+    margin-top: 2%;
+   
 }
 
-
-.global_section , .formulario {
+.global_section,
+.formulario {
+     margin-bottom: 2%;
     @include flexAbsolut(2px);
 }

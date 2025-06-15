@@ -1,39 +1,38 @@
-@import 'src/resources/variables/colors.scss';
-@import 'src/resources/variables/fonts.scss';
-@import 'src/resources/variables/displayFlex.scss';
+@use 'src/resources/variables/colors' as *;
+@use 'src/resources/variables/fonts' as *;
+@use 'src/resources/variables/displayFlex' as *;
 
 * {
     @include font;
 }
 
 .main_header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
-    justify-content: space-between;
-    width: 85vw;
-
+    justify-content:space-around;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .nome::before {
-    content: "Ed";
+    content: "Plan";
     color: $destaque;
-    font: $generalFonts;
+    font-family: $generalFonts;
     font-weight: 600;
-    font-size: 2.0rem;
-
+    font-size: 2rem;
 }
 
 .nome::after {
-    content: "valdo";
-    color: $generalFonts;
-    font: $generalFonts;
+    content: "tas";
+    color: $generalColor;
     font-weight: 600;
-    font-size: 2.0rem;
+    font-size: 2rem;
 }
 
 .menu_header {
     display: flex;
-    align-self: self-end;
-
+    align-self: flex-end;
 }
 
 a {
@@ -43,28 +42,32 @@ a {
 .about::before {
     content: "1.";
     color: $destaque;
-    font: $generalFonts;
+    font-family: $generalFonts;
     font-weight: 600;
 }
 
 .projects::before {
     content: "2.";
     color: $destaque;
-    font: $generalFonts;
+    font-family: $generalFonts;
+    font-weight: 600;
+}
+.galery::before {
+    content: ".3";
+    color: $destaque;
+    font-family: $generalFonts;
     font-weight: 600;
 }
 
 .contact::before {
-    content: "3.";
+    content: "4.";
     color: $destaque;
-    font: $generalFonts;
+    font-family: $generalFonts;
     font-weight: 600;
 }
 
-
-
 .section_header {
-    height: 50vh;
+    height: 25vh;
     @include flexAbsolut(0px);
     justify-content: space-around;
 }

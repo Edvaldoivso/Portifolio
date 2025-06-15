@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  public textoEdvaldo = 'Teste Hello I.m Edvaldo'
-  public botaogetTouch = `Let's get in touch!`
+  public textoHellow = 'Hello Im Edvaldo and I talk about Plants here.'
+  public botaoSortPlant = `Sort Month Specie`
   public subtexto = 'Currently located in Brasil...'
 
   constructor() { }

@@ -3,13 +3,13 @@ $generalFonts: 'Poppins', sans-serif;
 
 @mixin font {
     font-size: 20px;
-    color: white;
+    color: #0f1b0d;
     font-family: $generalFonts
 }
 
 @mixin fontBig {
     font-size: 30px;
-    color: white;
+    color: #0f1b0d;
     font-family: $generalFonts
 }
 
@@ -17,7 +17,7 @@ $generalFonts: 'Poppins', sans-serif;
 
 @mixin fontMedium {
     font: size 16px;
-    color: white;
+    color: #0f1b0d;
     font-family: $generalFonts
 }
 
@@ -25,7 +25,7 @@ $generalFonts: 'Poppins', sans-serif;
 
 @mixin fontSmall {
     font-size: 12px;
-    color: white;
+    color: #0f1b0d;
     font-family: $generalFonts
 }
 

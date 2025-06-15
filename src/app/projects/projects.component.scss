@@ -1,17 +1,21 @@
-@import 'src/resources/variables/fonts.scss';
+@use '/src/resources/variables/fonts' as *;
+@use '/src/resources/variables/colors' as *;
 
 .projeto {
     height: 60vh;
     display: flex;
     flex-direction: row;
-
 }
 
 .projeto_descricao {
     @include fontSmall;
     padding: 10%;
     max-width: 40%;
+    text-align: justify;
+    line-height: 1.6;
+    word-break: break-word;
 }
+
 
 .projeto_carrocel {
     max-width: 100vw;
@@ -25,7 +29,6 @@
 
 .projeto_carrocel_indicadores {
     display: flex;
-
     justify-content: space-around;
 }
 
