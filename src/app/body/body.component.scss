@@ -4,10 +4,11 @@
     display: flex;
     width: 50vw;
     margin-left: 25%;
+
 }
 
 .cheet_cardSkill {
-    background-color: rgba(154, 154, 200, 0.668);
+
     height: 200px;
     width: 200px;
     margin: 20px;
@@ -16,18 +17,27 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 10px 10px 10px 10px;
+
 }
 
 .cheet_cardImg {
     height: 100px;
     width: 100px;
+
 }
 
 .cheet_cardCaption {
     height: 50px;
     width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-figure , figcaption , img{
-    background-color: rgba(154, 154, 200, 0.668);
+figure,
+figcaption,
+img {
+    border-radius: 10px 10px 10px 10px;
+
 }

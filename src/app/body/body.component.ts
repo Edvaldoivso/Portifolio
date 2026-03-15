@@ -8,10 +8,12 @@ import { Component } from '@angular/core';
 export class BodyComponent {
 
   skills = [
-    { img: '#', texto: '1' },
-    { img: '#', texto: '2' },
-    { img: '#', texto: '3' },
-    { img: '#', texto: '4' },
+    { img: './assets/images/Desconhecido.PNG', texto: 'Filodendro' },
+    { img: './assets/images/espiritosanto.jpg', texto: 'Filodendro Billieteae' },
+    { img: './assets/images/filodendro.jpg', texto: 'Filodendro Verrucosum' },
+    { img: './assets/images/Verrucosum.jpg', texto: 'Filodendro' },
+        { img: './assets/images/Florida.jpg', texto: 'Filodendro' },
+            { img: './assets/images/brasileiro.jpg', texto: 'Filodendro' },
 ]
 
 
