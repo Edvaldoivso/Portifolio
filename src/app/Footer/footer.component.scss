@@ -1,15 +1,35 @@
 @use 'src/resources/variables/fonts' as *;
 @use 'src/resources/variables/displayFlex' as *;
 
-.footer_texto {
-    @include fontSmall;
-    height: 5vh;
-    margin-top: 2%;
+.global_section {
+
+    width: 88%;
+
+    margin: 0 auto 40px auto;
+
+    padding: 24px 30px;
+
+    border-radius: 28px;
+
    
+
+    backdrop-filter: blur(18px);
+
+  
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08),
+        inset 0 1px 1px rgba(255,255,255,0.2);
 }
 
-.global_section,
+.footer_texto {
+    @include fontSmall;
+
+    line-height: 1.8;
+
+    font-size: 0.95rem;
+}
+
 .formulario {
-     margin-bottom: 2%;
-    @include flexAbsolut(2px);
+    margin-top: 20px;
 }
