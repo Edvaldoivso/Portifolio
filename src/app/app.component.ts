@@ -2,12 +2,11 @@ import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `<router-outlet></router-outlet>`,
+   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  ngOnInit(): void {
+   ngOnInit(): void {
 
     document.addEventListener('contextmenu', (event) => {
       event.preventDefault();
@@ -34,5 +33,7 @@ export class AppComponent {
     }
 
   }
+ }
 
-}
+
+
