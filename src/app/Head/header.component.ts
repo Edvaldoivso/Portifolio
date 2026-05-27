@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  public textoHellow = 'Hello I talk about Plants here.'
-  public botaoSortPlant = `Sort Month Specie`
-  public subtexto = 'Currently located in Brasil...'
+  public textoHellow = 'Uma plataforma de Plantas de quem ama Plantas para quem ama Plantas'
+  public botaoSortPlant = `Escolha a especie do Mês para a coleção`
+  public subtexto = 'Plantas para a sua vida e para sua casa...'
 
   constructor() { }
   ngOnInit(): void {

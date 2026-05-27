@@ -1,0 +1,81 @@
+<div
+  class="modal-overlay"
+  *ngIf="isOpen"
+  (click)="closeModal()"
+>
+
+  <div
+    class="modal-container"
+    (click)="$event.stopPropagation()"
+  >
+
+    <button
+      class="close-button"
+      (click)="closeModal()"
+    >
+      ✕
+    </button>
+
+
+    <h1>{{ guide?.title }}</h1>
+
+    <h2>{{ guide?.popularName }}</h2>
+
+    <p class="introduction">
+      {{ guide?.introduction }}
+    </p>
+
+
+    <div
+      class="section"
+      *ngFor="let section of guide?.sections"
+    >
+
+      <h3>{{ section.title }}</h3>
+
+      <p>{{ section.content }}</p>
+
+    </div>
+
+
+    <div class="highlights">
+
+      <h3>Destaques</h3>
+
+      <ul>
+
+        <li
+          *ngFor="let item of guide?.highlights"
+        >
+          {{ item }}
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div class="problems">
+
+      <h3>Problemas Comuns</h3>
+
+      <div
+        class="problem-item"
+        *ngFor="let problem of guide?.problems"
+      >
+
+        <strong>
+          {{ problem.problem }}
+        </strong>
+
+        <p>
+          {{ problem.solution }}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

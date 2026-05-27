@@ -1,0 +1,13 @@
+<h1>{{ guide?.title }}</h1>
+
+<h2>{{ guide?.popularName }}</h2>
+
+<p>{{ guide?.introduction }}</p>
+
+<div *ngFor="let section of guide?.sections">
+
+  <h3>{{ section.title }}</h3>
+
+  <p>{{ section.content }}</p>
+
+</div>

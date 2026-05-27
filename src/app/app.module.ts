@@ -13,6 +13,10 @@ import { PagesComponent } from './Pages/pages/pages.component';
 import { IdeasComponent } from './Pages/ideas/ideas.component';
 import { GaleryComponent } from './Pages/galery/galery.component';
 import { IndorComponent } from './Pages/indor/indor.component';
+import { SolPlenoComponent } from './Pages/sol-pleno/sol-pleno.component';
+import { PlantDetailsComponent } from './pages/plant-details/plant-details.component';
+import { PlantModalComponent } from './components/plant-modal/plant-modal.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,11 +31,15 @@ import { IndorComponent } from './Pages/indor/indor.component';
     PagesComponent,
     IdeasComponent,
     GaleryComponent,
-    IndorComponent
+    IndorComponent,
+    SolPlenoComponent,
+    PlantDetailsComponent,
+    PlantModalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

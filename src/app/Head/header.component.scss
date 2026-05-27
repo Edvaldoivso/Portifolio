@@ -111,6 +111,7 @@
 
 }
 
+
 .about::before,
 .projects::before,
 .galery::before,
@@ -124,12 +125,13 @@
     content: "01";
 }
 
+
 .projects::before {
-    content: "02";
+    content: "03";
 }
 
 .galery::before {
-    content: "03";
+    content: "02";
 }
 
 .contact::before {
