@@ -14,7 +14,7 @@ import { IdeasComponent } from './Pages/ideas/ideas.component';
 import { GaleryComponent } from './Pages/galery/galery.component';
 import { IndorComponent } from './Pages/indor/indor.component';
 import { SolPlenoComponent } from './Pages/sol-pleno/sol-pleno.component';
-import { PlantDetailsComponent } from './pages/plant-details/plant-details.component';
+import { PlantDetailsComponent } from './Pages/plant-details/plant-details.component';
 import { PlantModalComponent } from './components/plant-modal/plant-modal.component';
 import { CommonModule } from '@angular/common';
 
