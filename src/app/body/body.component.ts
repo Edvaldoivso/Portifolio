@@ -18,40 +18,40 @@ export class BodyComponent {
   skills = [
 
     {
-      img: './assets/images/Desconhecido.PNG',
-      texto: 'Filodendro',
+      img: './assets/images/Costela.png',
+      texto: 'Costela de Adão',
       slug: 'monstera-deliciosa'
     },
 
     {
-      img: './assets/images/espiritosanto.jpg',
-      texto: 'Filodendro Billietiae',
+      img: './assets/images/Superbum.png',
+      texto: 'Platycerium Superbum',
       slug: 'platycerium-superbum'
     },
 
     {
-      img: './assets/images/filodendro.jpg',
-      texto: 'Filodendro Verrucosum',
+      img: './assets/images/MiniEspada.png',
+      texto: 'mini-espada',
       slug: 'mini-espada-de-sao-jorge'
     },
 
     {
-      img: './assets/images/Verrucosum.jpg',
-      texto: 'Filodendro',
+      img: './assets/images/Diffenbachia.png',
+      texto: 'Comigo Ninguém Pode',
       slug: 'dieffenbachia-seguine'
     },
 
-    {
-      img: './assets/images/Florida.jpg',
-      texto: 'Filodendro',
-      slug: 'monstera-deliciosa'
-    },
+    // {
+    //   img: './assets/images/LirioListrado.png',
+    //   texto: 'Lirio Listrado',
+    //   slug: 'monstera-deliciosa'
+    // },
 
-    {
-      img: './assets/images/brasileiro.jpg',
-      texto: 'Filodendro',
-      slug: 'platycerium-superbum'
-    }
+    // {
+    //   img: './assets/images/AnturioFantasia.png',
+    //   texto: 'Anturio Fantasia',
+    //   slug: 'platycerium-superbum'
+    // }
 
   ];
 

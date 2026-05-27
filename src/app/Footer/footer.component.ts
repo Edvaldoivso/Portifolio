@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  public contato: string = `Tem alguma dúvida ou sugestão? Estamos sempre prontos para ouvir! 📧 E-mail: contato@seudominio.com 📞 Telefone: +55 11 99999-9999 📍 Endereço: Rua Imaginária, 123 - Cidade Fictícia, Brasil 🕘 Horário de Atendimento: Segunda a Sexta, das 9h às 18`
+  public contato: string = `PlantasTropic © 2026 - Todos os direitos reservados.`;
 
 
   constructor() { }

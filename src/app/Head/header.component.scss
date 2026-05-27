@@ -4,40 +4,50 @@
 
 * {
     @include font;
+    box-sizing: border-box;
 }
 
 .main_header {
 
     position: sticky;
-    top: 18px;
+    top: 12px;
+
     z-index: 1000;
 
-    width: 88%;
+    width: calc(100% - 24px);
 
-    margin: 18px auto 0 auto;
+    max-width: 1700px;
+
+    margin: 12px auto 0 auto;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
-    padding: 26px 42px;
+    padding: 22px 28px;
 
-    border-radius: 32px;
+    border-radius: 28px;
 
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.08);
 
     backdrop-filter: blur(14px);
+
     -webkit-backdrop-filter: blur(14px);
 
     box-shadow:
         0 8px 24px rgba(0, 0, 0, 0.04);
 
     transition: 0.3s ease;
+
+    gap: 20px;
 }
 
 .main_header:hover {
     transform: translateY(-2px);
 }
+
 
 .nome {
 
@@ -49,34 +59,55 @@
 
     padding: 0;
 
+    flex-shrink: 0;
 }
 
 .nome::before {
+
     content: "Plantas";
+
     color: #e88b2f;
+
     font-weight: 700;
-    font-size: 2.6rem;
+
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+
     letter-spacing: -1px;
 }
 
 .nome::after {
+
     content: "Tropic";
+
     color: #3f8746;
+
     font-weight: 700;
-    font-size: 2.6rem;
+
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+
     letter-spacing: -1px;
 }
 
+
 .menu_header {
+
     display: flex;
+
     align-items: center;
-    gap: 5px;
+
+    justify-content: flex-end;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
     background: transparent !important;
 
     box-shadow: none !important;
 
     border: none !important;
 }
+
 
 .menu_header a {
 
@@ -88,27 +119,28 @@
 
     color: #1d1d1d;
 
-    background: transparent;
-
     transition:
         background 0.25s ease,
         transform 0.25s ease;
-    background: rgba(255, 255, 255, 0.04);
+
+    background: rgba(255, 255, 255, 0.08);
 
     backdrop-filter: blur(10px);
 
     box-shadow:
         0 4px 18px rgba(0, 0, 0, 0.03);
+
+    white-space: nowrap;
+
+    font-size: 0.95rem;
 }
+
 
 .menu_header a:hover {
 
-
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.12);
 
     transform: translateY(-1px);
-    backdrop-filter: blur(8px);
-
 }
 
 
@@ -116,15 +148,17 @@
 .projects::before,
 .galery::before,
 .contact::before {
+
     color: #e88b2f;
+
     font-weight: 700;
+
     margin-right: 4px;
 }
 
 .about::before {
     content: "01";
 }
-
 
 .projects::before {
     content: "03";
@@ -138,33 +172,170 @@
     content: "04";
 }
 
+
 .section_header {
-    min-height: 30vh;
+
+    min-height: 40vh;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
-    padding-top: 60px;
+    padding:
+        60px 20px 20px 20px;
 }
+
 
 .main-texto_header {
 
-
-    padding: 35px 50px;
+    padding: 30px;
 
     border-radius: 28px;
 
+    width: 100%;
+
+    max-width: 900px;
 }
+
 
 .main-texto {
-    font-size: 2.2rem;
+
+    font-size: clamp(2rem, 6vw, 4rem);
+
     font-weight: 700;
-    margin-bottom: 10px;
+
+    line-height: 1.15;
+
+    margin-bottom: 14px;
 }
 
+
 .sub-texto {
+
     @include fontSmall;
 
     opacity: 0.8;
+
+    line-height: 1.6;
+}
+
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .main_header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 22px 20px;
+
+        gap: 22px;
+
+        border-radius: 24px;
+    }
+
+
+    .menu_header {
+
+        width: 100%;
+
+        justify-content: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .menu_header a {
+
+        font-size: 0.88rem;
+
+        padding: 10px 14px;
+    }
+
+
+    .section_header {
+
+        min-height: auto;
+
+        padding-top: 40px;
+    }
+
+
+    .main-texto_header {
+
+        padding: 12px;
+    }
+
+
+    .main-texto {
+
+        font-size: clamp(2rem, 10vw, 3rem);
+
+        line-height: 1.2;
+    }
+
+
+    .sub-texto {
+
+        font-size: 0.95rem;
+    }
+}
+
+
+
+/* ========================= */
+/* MOBILE PEQUENO */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    .main_header {
+
+        width: calc(100% - 16px);
+
+        padding: 18px 16px;
+    }
+
+
+    .menu_header {
+
+        gap: 8px;
+    }
+
+
+    .menu_header a {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .main-texto {
+
+        font-size: 2.6rem;
+    }
+}
+
+.logo_container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+html,
+body {
+
+    overflow-x: hidden;
 }
